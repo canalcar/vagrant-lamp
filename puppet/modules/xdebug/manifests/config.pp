@@ -47,7 +47,7 @@ define xdebug::config (
     }
 
     file { "$xdebug_ini_file_path" :
-        content => template('/vagrant/puppet/templates/ini_file.erb'),
+        content => template('/vagrant/vagrant-lamp/puppet/templates/ini_file.erb'),
         ensure  => present,
         require => Package['xdebug'],
         notify  => Service['apache2'],

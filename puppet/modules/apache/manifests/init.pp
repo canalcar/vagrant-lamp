@@ -37,7 +37,7 @@ class apache
     { 
         "/etc/apache2/sites-available/default":
             ensure  => present,
-            source  => "/vagrant/puppet/templates/vhost",
+            source  => "/vagrant/vagrant-lamp/puppet/templates/vhost",
             require => Package['apache2'],
     }
 
@@ -53,7 +53,7 @@ class apache
     #{ 
     #    "/etc/network/default":
     #        ensure  => present,
-    #        source  => "/vagrant/puppet/templates/interaces",
+    #        source  => "/vagrant/vagrant-lamp/puppet/templates/interaces",
     #        require => Package['apache2'],
     #}
     
